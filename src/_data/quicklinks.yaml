@@ -23,3 +23,6 @@ links:
   - title: Cases
     url: "#"
     desc: Cybersecurity related Court cases and opinions
+  - title: Exploitable Machine Walkthroughs
+    desc: Walkthrough of Exploitable Machines
+    url: https://www.cyberoperator.com/tags/exploitable/
