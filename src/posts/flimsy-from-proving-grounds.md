@@ -6,7 +6,7 @@ description: This is a walkthrough of the flimsy machine that can be found in
 author: CyberOperator
 date: 2024-07-23T20:40:53.707Z
 tags:
-  - Tags
+  - Exploitable
 ---
 # Walk-through of Flimsy 
 
