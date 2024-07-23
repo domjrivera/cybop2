@@ -1,0 +1,29 @@
+---
+layout: page
+eleventyComputed:
+    title: All posts tagged '{{ tag }}'
+    permalink: /tags/{{ tag }}/
+pagination:
+    data: collections
+    size: 2
+    alias: tag
+    filter:
+        - all
+        - nav
+        - post
+        - posts
+        - tagList
+    addAllPagesToCollections: true
+permalink: /tags/{{ tag }}/
+headerButton:
+    url: '/blog/'
+    text: All posts
+---
+
+<ul class="unstyled">
+    {%- for post in collections[tag].reverse() -%}
+    {%- if not post.data.draft -%}
+    <li>{% include 'post-listing.njk' %}</li>
+    {%- endif -%}
+    {%- endfor -%}
+</ul>

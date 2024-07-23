@@ -1,14 +1,25 @@
----
 links:
-  - title: Netlify CMS
-    url: "https://www.netlifycms.org/"
-    desc: Open source content management for your Git workflow
-  - title: Eleventy
-    url: "https://www.11ty.dev/"
-    desc: Eleventy is a simpler static site generator.
-  - title: Alpine.js
-    url: "https://github.com/alpinejs/alpine"
-    desc: A minimal framework for composing JavaScript behavior in your markup.
-  - title: Tailwind CSS
-    url: "https://tailwindcss.com/"
-    desc: A utility-first CSS framework for rapidly building custom designs.
+  - title: FinTech
+    url: https://www.cyberoperator.com/tags/fintech/
+    desc: Financial Services Cybersecurity
+  - title: Security Articles
+    url: https://www.cyberoperator.com/tags/security%20article%20review/
+    desc: Summary of Peer Reviewed Cybersecurity Articles
+  - title: Generative AI and Large Language Models
+    url: https://www.cyberoperator.com/tags/genai/
+    desc: GenAI and Large Language Model Security
+  - title: Cyber Forensics
+    url: https://www.cyberoperator.com/tags/forensics/
+    desc: Cyber Forensics
+  - title: Cybersecurity Education
+    url: https://www.cyberoperator.com/tags/cybersecurity-education/
+    desc: Educational hacking security examples and cybersecurity education
+  - title: Critical Infrastructure
+    url: "#"
+    desc: Critical infrastructure cybersecurity
+  - title: Regulations
+    url: https://www.cyberoperator.com/tags/regulations/
+    desc: Cybersecurity Regulations
+  - title: Cases
+    url: "#"
+    desc: Cybersecurity related Court cases and opinions
