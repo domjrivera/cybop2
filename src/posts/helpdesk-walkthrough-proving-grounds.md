@@ -4,7 +4,7 @@ description: "Walkthrough of the Helpdesk machine from Proving Grounds "
 author: Cyber Operator
 date: 2024-07-24T14:48:18.308Z
 tags:
-  - Tags
+  - Exploitable
 ---
 # Helpdesk Exploitation Walkthrough
 
