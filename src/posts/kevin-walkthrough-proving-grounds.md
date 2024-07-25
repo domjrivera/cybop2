@@ -68,6 +68,20 @@ Ok, that is enough exploring (at least for now).  Time to exploit!
 
 ## Exploitation:
 
-T
+We already saw the exploit that we found through a Google search.  Another way (without using a browser) is to use searchsploit again:
+
+`searchsploit HP Power Manager`
+
+![](/static/img/screenshot-2024-07-25-at-3.45.31 pm.png)
+
+To download the exploit, we use
+
+`searchsploit -m windows/remote/10099.py`
+
+![](/static/img/screenshot-2024-07-25-at-3.49.23 pm.png)
+
+
+
+
 
 \--- COMING SOON ---
