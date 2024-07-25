@@ -16,6 +16,10 @@ We start with an Nmap version scan with the vuln script accross all ports
 
 `nmap -sC -sV --script vuln -p- [target IP]`
 
+![](/static/img/screenshot-2024-07-25-at-2.07.39 pm.png)
+
+![](/static/img/screenshot-2024-07-25-at-2.08.47 pm.png)
+
 Several things jump out, including a potential Remote Execution vulnerability.  Before going into that, let's recon the page at port 80 (GoAhead Webserver).  We start here, because it is literally an invitation to "Go Ahead":
 
 We see a login for "HP Power Manager"
@@ -31,6 +35,12 @@ Let's try it out:
 And using the admin:admin combination, we are logged in!
 
 ![](/static/img/screenshot-2024-07-25-at-1.08.05 pm.png)
+
+While we are at it, let's create a new user in the app.  We'll make them an administrator.  This allows us to get back in the app if in the future an admin decides to actually change the default password.  We create user groot:iamgroot
+
+![](/static/img/screenshot-2024-07-25-at-2.05.25 pm.png)
+
+
 
 That gives us a surface to consider.  Before doing that, let's also zero in on the SMB vulnerability that we saw from the nmap scan:
 
