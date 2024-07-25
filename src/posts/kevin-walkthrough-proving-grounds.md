@@ -111,3 +111,5 @@ We go to our netcat listener and we got a reverse shell! The shell is privileged
 Now we look for the flag.
 
 ![](/static/img/screenshot-2024-07-25-at-5.57.44 pm.png)
+
+All done!
