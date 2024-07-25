@@ -4,7 +4,7 @@ description: Walkthrough of the Kevin machine from Proving Grounds
 author: Cyber Operator
 date: 2024-07-25T16:55:50.565Z
 tags:
-  - Tags
+  - Exploitable
 ---
 # Kevin Walkthrough
 
