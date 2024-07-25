@@ -54,6 +54,20 @@ Let's look on searchsploit:
 
 ![](/static/img/screenshot-2024-07-25-at-1.18.34 pm.png)
 
+Those are some exploits to consider.  To close the loop and for throroughness, let's check out more info on the  HP Power Manager.  We already discovered that it has default credentials and we also created our own user "groot".  There may be even more attack surfaces!
 
+We do a simple Google search and find that there may be a buffer overflow vulnerability!
+
+![](/static/img/screenshot-2024-07-25-at-2.25.48 pm.png)
+
+And this is confirmed at exploit-db:
+
+![](/static/img/screenshot-2024-07-25-at-2.28.06 pm.png)
+
+Ok, that is enough exploring (at least for now).  Time to exploit!
+
+## Exploitation:
+
+T
 
 \--- COMING SOON ---
