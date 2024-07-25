@@ -12,6 +12,10 @@ This machine is classified as "Easy" under Proving Grounds.  It is a machine mea
 
 ## 1. Nmap Scan:
 
+We start with an Nmap version scan with the vuln script accross all ports
+
+`nmap -sC -sV --script vuln -p- [target IP]`
+
 T
 
 \--- COMING SOON ---
