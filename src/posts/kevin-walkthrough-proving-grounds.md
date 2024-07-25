@@ -32,9 +32,17 @@ And using the admin:admin combination, we are logged in!
 
 ![](/static/img/screenshot-2024-07-25-at-1.08.05 pm.png)
 
-That gives us a surface to consider.  Before doing that, let's also zero in on the SMB vulnerability that we saw from the nmap scan 
+That gives us a surface to consider.  Before doing that, let's also zero in on the SMB vulnerability that we saw from the nmap scan:
+
+![](/static/img/screenshot-2024-07-25-at-1.09.37 pm.png)
+
+ 
 
 **NOTE: We are jumping around between potential vulnerabilities on purpose. I have not worked on this machine before and am writing the walkthrough real-time. I don't know which one of these vulnerabilities can be exploited or which one to work on first.  The thought process is what counts. In the real world (and in certification exams) there are vulnerabilities that are rabbit holes that sometimes hide the real gems.  The idea is to document everything you see as you work and see which vulnerability pays off faster/easier.  With that out of the way, let's continue!**
+
+Let's look on searchsploit:
+
+![](/static/img/screenshot-2024-07-25-at-1.18.34 pm.png)
 
 
 
