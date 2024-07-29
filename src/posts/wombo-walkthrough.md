@@ -38,7 +38,15 @@ While we were looking around these, our longer nmap scan finished, so let's see 
 
 ![](/static/img/screenshot-2024-07-29-at-11.00.48 am.png)
 
+There are probably many rabbit holes that you can explore after looking at that scan.  For example, we do a searchsploit lookup for the OpenSSH version and for the Redis version:
 
+![](/static/img/screenshot-2024-07-29-at-11.16.00 am.png)
+
+While the username enumeration vuln from OpenSSH may be interesting, the Redis unauthenticated code execution seems more interesting.
+
+You could finalize this exploit with a Metasploit module.  If you are practicing for a cert exam, such as OSCP, this is not an option.  Let's try to find an interesting redis rce exploit. After a brief Google search, we find a two-part possible useable one:
+
+![](/static/img/screenshot-2024-07-29-at-11.31.48 am.png)
 
 
 
