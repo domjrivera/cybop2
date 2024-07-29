@@ -54,4 +54,8 @@ We then download the python exploit as well as the linux accompanying file:
 
 ![](/static/img/screenshot-2024-07-29-at-11.36.00 am.png)
 
-\------- TO BE CONTINUED ------
+Let's run it:
+
+![](/static/img/screenshot-2024-07-29-at-11.53.18 am.png)
+
+Pretty straightforward run of the exploit from there.
