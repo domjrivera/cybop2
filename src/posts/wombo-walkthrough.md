@@ -48,6 +48,10 @@ You could finalize this exploit with a Metasploit module.  If you are practicing
 
 ![](/static/img/screenshot-2024-07-29-at-11.31.48 am.png)
 
+![](/static/img/screenshot-2024-07-29-at-11.34.54 am.png)
 
+We then download the python exploit as well as the linux accompanying file:
+
+![](/static/img/screenshot-2024-07-29-at-11.36.00 am.png)
 
 \------- TO BE CONTINUED ------
