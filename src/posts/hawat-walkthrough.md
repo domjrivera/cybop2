@@ -46,4 +46,6 @@ And directory traversal over the Internet is allowed, another strike!
 
 With so many potential attack surfaces, the challenge is which one to pick first.  You don't want to go down a rabbit hole and waste a lot of time in what should be a pretty easy machine to exploit!
 
+Let's enumerate some more then, gobuster to the rescue!
+
 \--- TO BE CONTINUED ---
