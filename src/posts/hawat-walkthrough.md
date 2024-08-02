@@ -22,4 +22,14 @@ We see that this is full of interesting services in unusual ports (that is why w
 
 ![](/static/img/screenshot-2024-08-02-at-2.04.41 pm.png)
 
+## Additional Recon and Enumeration
+
+Issue tracker web app in an unusual port, 17445, interesting...
+
+![](/static/img/screenshot-2024-08-02-at-2.08.08 pm.png)
+
+We used the option to create a user on this app (username "soyplant").  Looking at the list of registered user, we see the user we just created as well as a the other existing users (as part of our enumeration)
+
+![](/static/img/screenshot-2024-08-02-at-2.10.06 pm.png)
+
 \--- TO BE CONTINUED ---
