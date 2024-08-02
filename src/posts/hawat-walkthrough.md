@@ -32,4 +32,18 @@ We used the option to create a user on this app (username "soyplant").  Looking 
 
 ![](/static/img/screenshot-2024-08-02-at-2.10.06 pm.png)
 
+And another web app on port 30455, also an non traditional port (looks like this is a badly executed attempt to hide apps using non-traditional ports, always a dumb idea!
+
+![](/static/img/screenshot-2024-08-02-at-2.15.22 pm.png)
+
+And another one in port 50080 (yawn?)
+
+![](/static/img/screenshot-2024-08-02-at-2.18.07 pm.png)
+
+And directory traversal over the Internet is allowed, another strike!
+
+![](/static/img/screenshot-2024-08-02-at-2.20.59 pm.png)
+
+With so many potential attack surfaces, the challenge is which one to pick first.  You don't want to go down a rabbit hole and waste a lot of time in what should be a pretty easy machine to exploit!
+
 \--- TO BE CONTINUED ---
