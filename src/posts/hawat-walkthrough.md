@@ -62,6 +62,10 @@ There is the Nextcloud login screen:
 
 ![](/static/img/screenshot-2024-08-06-at-11.07.53 am.png)
 
+The combination admin:admin works to log in.
 
+![](/static/img/screenshot-2024-08-06-at-11.12.08 am.png)
+
+Notice the file issuetracker.zip. 
 
 \--- TO BE CONTINUED ---
