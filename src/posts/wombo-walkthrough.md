@@ -4,7 +4,7 @@ description: Walkthrough of Wombo from Proving Grounds
 author: Cyber Operator
 date: 2024-07-29T14:46:36.787Z
 tags:
-  - Tags
+  - Exploitable
 ---
 Wombo is a machine labeled as "easy".  It is a Linux machine that you can use to practice pentesting in general or more specifically to practice for certification exams, such as OSCP.  With that, let's begin!
 
