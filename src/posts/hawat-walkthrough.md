@@ -48,4 +48,20 @@ With so many potential attack surfaces, the challenge is which one to pick first
 
 Let's enumerate some more then, gobuster to the rescue!
 
+Note that if you use the in-browser instance at Proving Grounds, your machine may not have gobuster installed and you will not have privileges to install it yourself.  Just like at any time, never depend on a tool! The concept is enumerating a web server and luckily there are other tools you could use if you know how to do web server enumeration in general.  In this case, I stumbled upon dirb when looking through the tools installed in the Kali in-browser instance, so let's use that!
+
+![](/static/img/screenshot-2024-08-06-at-10.57.23 am.png)
+
+In this case, we will use the command:
+
+`dirb http://192.168.55.147:50080 -w /usr/share/dirbuster/wordlists/directory-list-lowercase-2.3-medium.txt`
+
+We find the /cloud directory so time to browse it!
+
+There is the Nextcloud login screen:
+
+![](/static/img/screenshot-2024-08-06-at-11.07.53 am.png)
+
+
+
 \--- TO BE CONTINUED ---
