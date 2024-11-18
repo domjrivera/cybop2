@@ -4,7 +4,7 @@ description: MacOS Forensic Artifacts Location
 author: Cyber Operator
 date: 2024-11-18T15:40:03.218Z
 tags:
-  - Tags
+  - Forensics
 ---
 # **Forensic Artifacts in macO**
 
