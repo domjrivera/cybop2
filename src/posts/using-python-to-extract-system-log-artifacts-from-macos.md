@@ -10,41 +10,41 @@ tags:
 import datetime
 import pandas as pd`
 
-# `Define the log file paths`
-
-`log_files = [
+import os
+import datetime
+import pandas as pd
+import re
+# Define the log file paths
+log_files = [
     '/var/log/system.log',
     '/var/log/security.log',
     '/var/log/install.log'
-]`
-
-# `Create an empty list to store the extracted data`
-
-`data = []`
-
-# `Iterate through each log file`
-
-`for log_file in log_files:
+]
+# Create an empty list to store the extracted data
+data = []
+# Get the current year
+current_year = datetime.date.today().year
+# Iterate through each log file
+for log_file in log_files:
     # Check if the log file exists
     if os.path.exists(log_file):
         # Open the log file in read mode
         with open(log_file, 'r') as f:
             # Iterate through each line in the log file
             for line in f:
-                # Split the line into its components (date, time, message)
-                date_str, time_str, message = line.split(' ', 2)
-                # Parse the date and time strings into a datetime object
-                dt = datetime.datetime.strptime(f'{date_str} {time_str}', '%b %d %H:%M:%S')
-                # Append the extracted data to the list
-                data.append({
-                    'Date': dt,
-                    'Message': message.strip()
-                })`
-
-# `Create a Pandas DataFrame from the extracted data`
-
-`df = pd.DataFrame(data)`
-
-# `Output the DataFrame to a CSV file`
-
-`df.to_csv('system_logs.csv', index=False)`
+                # Use regular expression to extract the timestamp
+                match = re.search(r'\w{3}\s{1,2}\d{1,2}\s\d{2}:\d{2}:\d{2}', line)
+                if match:
+                    timestamp = match.group()
+                    # Add the current year to the timestamp
+                    dt = datetime.datetime.strptime(f'{timestamp} {current_year}', '%b %d %H:%M:%S %Y')
+                    message = line[match.end():].strip()
+                    # Append the extracted data to the list
+                    data.append({
+                        'Date': dt,
+                        'Message': message
+                    })
+# Create a Pandas DataFrame from the extracted data
+df = pd.DataFrame(data)
+# Output the DataFrame to a CSV file
+df.to_csv('system_logs.csv', index=False)
