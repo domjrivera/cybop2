@@ -4,7 +4,7 @@ description: Using Python to Extract System Log Artifacts from MacOS
 author: Cyber Operator
 date: 2024-11-18T15:49:27.407Z
 tags:
-  - Tags
+  - Forensics
 ---
 `import os
 import datetime
